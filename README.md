@@ -1,49 +1,89 @@
+// src/App.js
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import "./App.css";
 
-export default function Portfolio() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center p-6">
-      <header className="text-center mt-10">
-        <h1 className="text-4xl font-bold">Your Name</h1>
-        <p className="text-gray-400 mt-2">Web Developer | Designer | Freelancer</p>
+    <div className="container">
+      <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Freelancer</p>
       </header>
 
-      <section className="mt-10 max-w-3xl text-center">
-        <h2 className="text-2xl font-semibold">About Me</h2>
-        <p className="text-gray-300 mt-4">
+      <section className="about">
+        <h2>About Me</h2>
+        <p>
           Hi! I'm a passionate developer who loves creating stunning web applications. I have experience in frontend and backend technologies.
         </p>
       </section>
 
-      <section className="mt-10 max-w-3xl">
-        <h2 className="text-2xl font-semibold text-center">Portfolio</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          <div className="bg-gray-800 p-4 rounded-xl">
-            <h3 className="text-lg font-semibold">Project 1</h3>
-            <p className="text-gray-400">Description of your awesome project.</p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-xl">
-            <h3 className="text-lg font-semibold">Project 2</h3>
-            <p className="text-gray-400">Another great project you built.</p>
-          </div>
+      <section className="portfolio">
+        <h2>Portfolio</h2>
+        <div className="project">
+          <h3>Project 1</h3>
+          <p>Description of your awesome project.</p>
+        </div>
+        <div className="project">
+          <h3>Project 2</h3>
+          <p>Another great project you built.</p>
         </div>
       </section>
 
-      <section className="mt-10 text-center">
-        <h2 className="text-2xl font-semibold">Contact</h2>
-        <div className="flex gap-6 justify-center mt-4">
-          <a href="https://github.com" className="text-gray-400 hover:text-white text-2xl">
+      <section className="contact">
+        <h2>Contact</h2>
+        <div className="social-links">
+          <a href="https://github.com" className="icon">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" className="text-gray-400 hover:text-white text-2xl">
+          <a href="https://linkedin.com" className="icon">
             <FaLinkedin />
           </a>
-          <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white text-2xl">
+          <a href="mailto:your.email@example.com" className="icon">
             <FaEnvelope />
           </a>
         </div>
       </section>
     </div>
   );
+}
+
+// src/App.css
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+}
+
+header {
+  margin-top: 20px;
+}
+
+.about, .portfolio, .contact {
+  margin-top: 40px;
+}
+
+.project {
+  background: #333;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.icon {
+  color: white;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #00aced;
 }
