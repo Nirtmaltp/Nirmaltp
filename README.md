@@ -1,82 +1,57 @@
-
-      <header>
+// index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
         <h1>Your Name</h1>
-        <p>Web Developer | Designer | Freelancer</p>
-      </header>
-
-      <section className="about">
-        <h2>About Me</h2>
-        <p>
-          Hi! I'm a passionate developer who loves creating stunning web applications. I have experience in frontend and backend technologies.
-        </p>
-      </section>
-
-      <section className="portfolio">
-        <h2>Portfolio</h2>
-        <div className="project">
-          <h3>Project 1</h3>
-          <p>Description of your awesome project.</p>
+        <p>Web Developer | Designer</p>
+    </header>
+    
+    <section id="portfolio">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of your project.</p>
         </div>
-        <div className="project">
-          <h3>Project 2</h3>
-          <p>Another great project you built.</p>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Another great project.</p>
         </div>
-      </section>
+    </section>
 
-      <section className="contact">
-        <h2>Contact</h2>
-        <div className="social-links">
-          <a href="https://github.com" className="icon">
-            <FaGithub />
-          </a>
-          <a href="https://linkedin.com" className="icon">
-            <FaLinkedin />
-          </a>
-          <a href="mailto:your.email@example.com" className="icon">
-            <FaEnvelope />
-          </a>
-        </div>
-      </section>
-    </div>
-  );
-}
+    <footer>
+        <p>Contact: your.email@example.com</p>
+    </footer>
+</body>
+</html>
 
-// src/App.css
-.container {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
-  color: white;
-  padding: 20px;
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
 }
 
 header {
-  margin-top: 20px;
-}
-
-.about, .portfolio, .contact {
-  margin-top: 40px;
+    background: #222;
+    color: white;
+    padding: 20px;
 }
 
 .project {
-  background: #333;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  font-size: 24px;
-}
-
-.icon {
-  color: white;
-  transition: color 0.3s;
-}
-
-.icon:hover {
-  color: #00aced;
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
