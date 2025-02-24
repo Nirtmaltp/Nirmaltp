@@ -13,7 +13,8 @@
         <p>Web Developer | Designer</p>
     </header>
     
-    <section id="portfolio">
+ """
+ <section id="portfolio">
         <h2>Projects</h2>
         <div class="project">
             <h3>Project 1</h3>
@@ -55,3 +56,4 @@ header {
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+"""
