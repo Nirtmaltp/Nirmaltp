@@ -1,11 +1,4 @@
-// src/App.js
-import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import "./App.css";
 
-export default function App() {
-  return (
-    <div className="container">
       <header>
         <h1>Your Name</h1>
         <p>Web Developer | Designer | Freelancer</p>
