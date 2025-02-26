@@ -31,7 +31,7 @@ To use the Minimal theme:
 Minimal will respect the following variables, if set in your site's `_config.yml`:
 
 ```yml
-title: [The title of your site]
+title: [NIRMAL THOMAS]
 description: [A short description of your site's purpose]
 ```
 
